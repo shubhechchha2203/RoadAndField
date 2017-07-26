@@ -18,7 +18,12 @@ public class RoadAndField {
 	private By clickOnEnrollNow=By.xpath("//div[@class='hidden-xs']/descendant::a[contains(text(),'Enroll Now')]");
 	private By searchConsultant=By.xpath("//input[@id='sponserparam']");
 	private By clickOnSearch=By.xpath("//button[@id='search-sponsor-button']");
-	private By clickOnRightArrow=By.xpath("//a[@class='next']");
+	private By clickRightArrow=By.xpath("//a[@class='next']");
+	private By moveOnElement2=By.xpath("//div[@id='header']/descendant::a[@id='our-products']");
+	
+	private By clickOnAllProduct=By.xpath("//div[@class='hidden-xs']/descendant::a[contains(text(),'All Products')]");
+	private By selectPrice=By.xpath("//input[@value='- Price -']");
+			
 	public RoadAndField(WebDriver driver)
 	{
 		this.driver=driver;
@@ -43,9 +48,22 @@ public class RoadAndField {
 	}
 	public void clickOnRightArrow()
 	{
-	driver.findElement(clickOnRightArrow).click();
-	String nevigationNo =driver.findElement(By.xpath("//span[contains(text(),'2')]")).getText();
-	
+	driver.findElement(clickRightArrow).click();
+	}
+	public void moveOnElement2()
+	{
+	Actions actions=new Actions(driver);
+	actions.moveToElement(driver.findElement(moveOnElement2)).build().perform();
+	}
+	public void clickAllProduct()
+	{
+	driver.findElement(clickOnAllProduct).click();
+	}
+	public void selectPriceValue()
+	{driver.findElement(selectPrice).click();
+	}
+	//driver.findElement(By.xpath("//input[@id='CAD$50 TO CAD$199.99']//preceding::div[@class='repaired-checkbox checked']")).click();
+				
 	
 
 }

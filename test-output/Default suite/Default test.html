@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Nov 02 13:45:27 IST 2016</td>
+<td>Started on:</td><td>Fri Nov 04 13:33:22 IST 2016</td>
 </tr>
-<tr><td>Total time:</td><td>54 seconds (54670 ms)</td>
+<tr><td>Total time:</td><td>33 seconds (33552 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,14 +75,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.Selenium.RoadAndFieldPage.RoadAndField.testRoadAndField2()'><b>testRoadAndField2</b><br>Test class: com.Selenium.RoadAndFieldPage.RoadAndField</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;CAD$50 TO CAD$199.99&apos;]//preceding::div[@class=&apos;repaired-checkbox checked&apos;]&quot;}
-Command duration or timeout: 30.19 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+<td title='com.Selenium.RoadAndFieldTest.RoadAndFieldTest.testRoadAndField1()'><b>testRoadAndField1</b><br>Test class: com.Selenium.RoadAndFieldTest.RoadAndFieldTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (1238.5, 78.48333740234375). Other element would receive the click: &lt;li id=&quot;CompanyBar&quot; class=&quot;CompanyNavNode main-nav-field text-uppercase&quot;&gt;&lt;/li&gt;
+Command duration or timeout: 1.17 seconds
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
 System info: host: &apos;NODE94&apos;, ip: &apos;10.210.1.4&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_79&apos;
-*** Element info: {Using=xpath, value=//input[@id=&apos;CAD$50 TO CAD$199.99&apos;]//preceding::div[@class=&apos;repaired-checkbox checked&apos;]}
-Session ID: 35321543-f05a-4da5-aad7-b41e118155cd
+Session ID: ba2c4d5f-4d21-4d76-8844-f75c5d26cf52
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=43.0.1}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -92,11 +90,10 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.Selenium.RoadAndFieldPage.RoadAndField.testRoadAndField2(RoadAndField.java:49)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.Selenium.RoadAndFieldPage.RoadAndField.clickOnRightArrow(RoadAndField.java:51)
+	at com.Selenium.RoadAndFieldTest.RoadAndFieldTest.testRoadAndField1(RoadAndFieldTest.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -121,21 +118,12 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;CAD$50 TO CAD$199.99&apos;]//preceding::div[@class=&apos;repaired-checkbox checked&apos;]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+</pre></div><a href='#' onClick='toggleBox("stack-trace1211033161", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1211033161'><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (1238.5, 78.48333740234375). Other element would receive the click: &lt;li id=&quot;CompanyBar&quot; class=&quot;CompanyNavNode main-nav-field text-uppercase&quot;&gt;&lt;/li&gt;
+Command duration or timeout: 1.17 seconds
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
 System info: host: &apos;NODE94&apos;, ip: &apos;10.210.1.4&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_79&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Admin/AppData/Local/Temp/anonymous6966848866589516615webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Admin/AppData/Local/Temp/anonymous6966848866589516615webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1650996891", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1650996891'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;CAD$50 TO CAD$199.99&apos;]//preceding::div[@class=&apos;repaired-checkbox checked&apos;]&quot;}
-Command duration or timeout: 30.19 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;NODE94&apos;, ip: &apos;10.210.1.4&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_79&apos;
-*** Element info: {Using=xpath, value=//input[@id=&apos;CAD$50 TO CAD$199.99&apos;]//preceding::div[@class=&apos;repaired-checkbox checked&apos;]}
-Session ID: 35321543-f05a-4da5-aad7-b41e118155cd
+Session ID: ba2c4d5f-4d21-4d76-8844-f75c5d26cf52
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=43.0.1}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -145,11 +133,10 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.Selenium.RoadAndFieldPage.RoadAndField.testRoadAndField2(RoadAndField.java:49)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.Selenium.RoadAndFieldPage.RoadAndField.clickOnRightArrow(RoadAndField.java:51)
+	at com.Selenium.RoadAndFieldTest.RoadAndFieldTest.testRoadAndField1(RoadAndFieldTest.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -174,16 +161,9 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;CAD$50 TO CAD$199.99&apos;]//preceding::div[@class=&apos;repaired-checkbox checked&apos;]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;NODE94&apos;, ip: &apos;10.210.1.4&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_79&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Admin/AppData/Local/Temp/anonymous6966848866589516615webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Admin/AppData/Local/Temp/anonymous6966848866589516615webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
 </pre></div></td>
-<td>54</td>
-<td>com.Selenium.RoadAndFieldPage.RoadAndField@36c0b403</td></tr>
+<td>23</td>
+<td>com.Selenium.RoadAndFieldTest.RoadAndFieldTest@5fe2d461</td></tr>
 </table><p>
 </body>
 </html>
